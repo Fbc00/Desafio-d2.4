@@ -4,7 +4,7 @@
   }
   @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
  
- body{
+ html, body{
     box-sizing: border-box;
     font-family: "Montserrat", sans-serif;
     margin: 0;
@@ -231,25 +231,28 @@ main{
     line-height: 2rem;
 }
 
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 576px) {
 
-    .header, .vol, .range, .profissão, .subFim{
-       
+    .header, .vol, .range, .profissão, .subFim, .filho-contatos, .icons {
+        margin: auto;
         font-size: 1rem;
-        width: 21rem;
+        width: 22rem;
 
     }
     .subFim {
         width: 100%;
     }
     .ifons {
-        width: auto;
+
         width: 20rem;
 
     }
+    .contacts {
+        margin: 1rem 1rem;
+    }
     .subFim h2{
         margin: auto;
-        width: 30rem;
+        width: 22rem;
         text-align: center;
         font-size: 1.5rem;
         
@@ -263,13 +266,15 @@ main{
    
     .sub-section{
         margin: auto;
-        width: 25rem !important;
+        width: 22rem !important;
         height: auto;
         
     }
     .mini-section {
+        margin-left: 1rem;
         width: 20rem;
         height: 22rem;
+        
     }
     .mini-section p {
         margin-top: 0.5;
@@ -277,10 +282,10 @@ main{
         font-size: 1.1rem;
     }
   }
-  @media only screen and (max-width: 1050px) { 
+  @media only screen and (max-width: 720px) { 
     .sub-section{
         margin: auto;
-        width: 45rem;
+        width: 100%;
         height: auto;
         
     }
